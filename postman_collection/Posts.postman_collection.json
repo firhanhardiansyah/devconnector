@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "c8b925c6-43dc-45e2-8c37-0ab595aa7870",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTMzMSwiZXhwIjoxNjE0NDU5MzMxfQ.azAikiAl4s8X1kRgVDfCzCTvIYDVO5Q4nwaXXfvbzFk",
+						"description": "Firhan Token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis metus ac dolor ullamcorper sollicitudin. Phasellus elementum, massa sed volutpat fermentum, nisi purus suscipit lacus, fringilla tristique quam nisi id elit. Morbi sodales lacus porta, faucibus lectus ut, finibus orci. Curabitur urna turpis, facilisis ut turpis fermentum, volutpat auctor lectus.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTQ0NDE2ZjJhNjJkNGJjNmQyYTQwIn0sImlhdCI6MTYxNDEwMzY0MCwiZXhwIjoxNjE0NDYzNjQwfQ.dRjDjijsxAhT9F3VglWPeubN1XXEatMx-CiG7e0utAM",
+						"description": "Iman Sanjaya Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get post by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTMzMSwiZXhwIjoxNjE0NDU5MzMxfQ.azAikiAl4s8X1kRgVDfCzCTvIYDVO5Q4nwaXXfvbzFk",
+						"description": "Firhan Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/603544a16f2a62d4bc6d2a41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"603544a16f2a62d4bc6d2a41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTMzMSwiZXhwIjoxNjE0NDU5MzMxfQ.azAikiAl4s8X1kRgVDfCzCTvIYDVO5Q4nwaXXfvbzFk",
+						"description": "Firhan Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/6035498b029823db043b46d9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"6035498b029823db043b46d9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTQ0NDE2ZjJhNjJkNGJjNmQyYTQwIn0sImlhdCI6MTYxNDEwMzY0MCwiZXhwIjoxNjE0NDYzNjQwfQ.dRjDjijsxAhT9F3VglWPeubN1XXEatMx-CiG7e0utAM",
+						"description": "Iman Sanjaya Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/like/603543c96f2a62d4bc6d2a3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"like",
+						"603543c96f2a62d4bc6d2a3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTQ0NDE2ZjJhNjJkNGJjNmQyYTQwIn0sImlhdCI6MTYxNDEwMzY0MCwiZXhwIjoxNjE0NDYzNjQwfQ.dRjDjijsxAhT9F3VglWPeubN1XXEatMx-CiG7e0utAM",
+						"description": "Iman Sanjaya Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/unlike/603543c96f2a62d4bc6d2a3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"unlike",
+						"603543c96f2a62d4bc6d2a3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTQ0NDE2ZjJhNjJkNGJjNmQyYTQwIn0sImlhdCI6MTYxNDEwMzY0MCwiZXhwIjoxNjE0NDYzNjQwfQ.dRjDjijsxAhT9F3VglWPeubN1XXEatMx-CiG7e0utAM",
+						"description": "Iman Sanjaya Token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Delete me!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/603543c96f2a62d4bc6d2a3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"603543c96f2a62d4bc6d2a3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTQ0NDE2ZjJhNjJkNGJjNmQyYTQwIn0sImlhdCI6MTYxNDEwMzY0MCwiZXhwIjoxNjE0NDYzNjQwfQ.dRjDjijsxAhT9F3VglWPeubN1XXEatMx-CiG7e0utAM",
+						"description": "Iman Sanjaya Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/603543c96f2a62d4bc6d2a3f/603550b6699813e083bdd264",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"603543c96f2a62d4bc6d2a3f",
+						"603550b6699813e083bdd264"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

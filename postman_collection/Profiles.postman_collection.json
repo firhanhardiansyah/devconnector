@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "de72b340-a908-4638-a364-32a8e0b88d76",
+		"name": "Profiles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create & update profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "JSON content"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5Nzg2NCwiZXhwIjoxNjE0NDU3ODY0fQ.uPAmRKqvYRK8F3YBZSGMAnLVJnJFq5vm2_hG54FCYn4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"company\": \"SITEKTIF\",\n\t\"status\": \"Full stack developer\",\n\t\"website\": \"firhanhardiansyah.com\",\n\t\"skills\": \"Java, Javascript, Angular, Ionic\",\n\t\"location\": \"Rice City\",\n\t\"bio\": \"I am a analysis for sitektif\",\n\t\"githubusername\": \"firhanhardiansyah\",\n\t\"twitter\": \"https://twitter.com/firhanhardiansyah\",\n\t\"facebook\": \"https://facebook.com/firhanhardiansyah\",\n\t\"youtube\": \"https://youtube.com/firhanhardiansyah\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get logged in users profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5Nzg2NCwiZXhwIjoxNjE0NDU3ODY0fQ.uPAmRKqvYRK8F3YBZSGMAnLVJnJFq5vm2_hG54FCYn4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile by user ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/user/60352dc7ca3dcfa691c963f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"user",
+						"60352dc7ca3dcfa691c963f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete profile & user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTI5Zjg0ZjhkMjk5Y2EwYmQzOWNiIn0sImlhdCI6MTYxNDA5NzQ2NywiZXhwIjoxNjE0NDU3NDY3fQ.9HLnqGupMzM9cLOUtANmKhBxDEn0YlA0Z08CZn9Lqec",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add experience",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5Nzk0MCwiZXhwIjoxNjE0NDU3OTQwfQ.q4IrEX_jsHNA3jGTzp6kY3vestH89V7V2yMFKsYRnnU",
+						"description": "Firhan Token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test\",\n    \"company\": \"Test\",\n    \"location\": \"Jakarta\",\n    \"from\": \"1-5-2021\",\n    \"to\": \"1-7-2022\",\n    \"description\": \"Full Stack Developer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add education",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"description": "Firhan Token",
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTgzMCwiZXhwIjoxNjE0NDU5ODMwfQ.slTQGNtxU1UZaSEzuPDOL9NYI7S-uDKr0FgJ7rk5ELg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"school\": \"Test school\",\n    \"degree\": \"Associates Degree\",\n    \"fieldofstudy\": \"Computer Science\",\n    \"from\": \"8-2-2018\",\n    \"to\": \"3-4-2022\",\n    \"description\": \"Got Associates in computer Science\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete profile experience",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTMzMSwiZXhwIjoxNjE0NDU5MzMxfQ.azAikiAl4s8X1kRgVDfCzCTvIYDVO5Q4nwaXXfvbzFk",
+						"description": "Firhan Token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience/60353226ca3dcfa691c963f9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience",
+						"60353226ca3dcfa691c963f9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete profile education",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"description": "Firhan Token",
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTJkYzdjYTNkY2ZhNjkxYzk2M2Y2In0sImlhdCI6MTYxNDA5OTMzMSwiZXhwIjoxNjE0NDU5MzMxfQ.azAikiAl4s8X1kRgVDfCzCTvIYDVO5Q4nwaXXfvbzFk"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education/603535c6e504c7b9ec329a93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education",
+						"603535c6e504c7b9ec329a93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Github repos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/github/firhanhardiansyah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"github",
+						"firhanhardiansyah"
+					],
+					"query": [
+						{
+							"key": "per_page",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "created:asc",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "555ae17cca549273a065",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "3f44b3918e75982870982c9181ef0c89e1b4dfcf",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

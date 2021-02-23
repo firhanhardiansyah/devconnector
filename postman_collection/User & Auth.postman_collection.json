@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "bff21c0e-848b-475f-9c05-ec3285c4aa0e",
+		"name": "User & Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Firhan Hardiansyah\",\n    \"email\": \"firhanhardiansyah.dev@gmail.com\",\n    \"password\": \"12345678\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get auth user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAzNTI5Zjg0ZjhkMjk5Y2EwYmQzOWNiIn0sImlhdCI6MTYxNDA5Njg4OCwiZXhwIjoxNjE0NDU2ODg4fQ.f7tZ2SxkrFTK80PfPIu_X0KCaQ2aj1zC2h-WJ_D3B1A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"firhanhardiansyah.dev@gmail.com\",\n\t\"password\": \"12345678\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

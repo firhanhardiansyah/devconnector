@@ -1,4 +1,3 @@
-// const mongoClient = require('mongodb').MongoClient
 const mongoose = require('mongoose')
 
 const UserSchema = new mongoose.Schema({
